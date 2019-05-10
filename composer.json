@@ -3,6 +3,7 @@
 	"require" : {
 		"twbs/bootstrap" : "^4.1",
 		"components/jquery" : "^3.3",
-		"components/jqueryui" : "^1.12"
+		"components/jqueryui" : "^1.12",
+		"fortawesome/font-awesome": "^5.8"
 	}
 }
