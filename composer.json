@@ -4,6 +4,7 @@
 		"twbs/bootstrap" : "^4.1",
 		"components/jquery" : "^3.3",
 		"components/jqueryui" : "^1.12",
-		"fortawesome/font-awesome": "^5.8"
+		"fortawesome/font-awesome": "^5.8",
+		"bcosca/fatfree": "^3.6"
 	}
 }
