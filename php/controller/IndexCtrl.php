@@ -1,22 +1,26 @@
 <?php
 namespace controller;
 
-class Ctrl
+class IndexCtrl
 {
 
 	public static function beforeRoute ()
 	{
 		
 	}
-
+    
+	
 	public static function afterRoute ()
 	{
 		
 	}
 
-	public static function GET_index ()
+	
+	public static function indexGET ()
 	{
 		$view = new \View();
 		echo $view->render('index.phtml');
 	}
+	
+	
 }

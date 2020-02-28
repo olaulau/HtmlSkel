@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8905cd65e4d0b543740737863397fd76",
+    "content-hash": "65529f2bdb40ade0fafea4c2c31dab48",
     "packages": [
         {
             "name": "bcosca/fatfree",
-            "version": "3.6.5",
+            "version": "3.7.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bcosca/fatfree.git",
-                "reference": "a841d838e8f146486d85e4947fb92e2fa78fdeb8"
+                "reference": "495a97c9957a9edfbaea362927be6f3faa96fc52"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bcosca/fatfree/zipball/a841d838e8f146486d85e4947fb92e2fa78fdeb8",
-                "reference": "a841d838e8f146486d85e4947fb92e2fa78fdeb8",
+                "url": "https://api.github.com/repos/bcosca/fatfree/zipball/495a97c9957a9edfbaea362927be6f3faa96fc52",
+                "reference": "495a97c9957a9edfbaea362927be6f3faa96fc52",
                 "shasum": ""
             },
             "require": {
@@ -35,20 +35,20 @@
             ],
             "description": "A powerful yet easy-to-use PHP micro-framework designed to help you build dynamic and robust Web applications - fast!",
             "homepage": "http://fatfreeframework.com/",
-            "time": "2018-12-24T13:43:34+00:00"
+            "time": "2019-12-30T20:54:35+00:00"
         },
         {
             "name": "components/jquery",
-            "version": "3.3.1",
+            "version": "3.4.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/components/jquery.git",
-                "reference": "459648cda77875519c5da3ae1dd0ed5d170aa649"
+                "reference": "901828b7968b18319e377dc23d466f28426ee083"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/components/jquery/zipball/459648cda77875519c5da3ae1dd0ed5d170aa649",
-                "reference": "459648cda77875519c5da3ae1dd0ed5d170aa649",
+                "url": "https://api.github.com/repos/components/jquery/zipball/901828b7968b18319e377dc23d466f28426ee083",
+                "reference": "901828b7968b18319e377dc23d466f28426ee083",
                 "shasum": ""
             },
             "type": "component",
@@ -77,7 +77,7 @@
             ],
             "description": "jQuery JavaScript Library",
             "homepage": "http://jquery.com",
-            "time": "2018-03-04T13:23:48+00:00"
+            "time": "2019-10-23T05:15:13+00:00"
         },
         {
             "name": "components/jqueryui",
@@ -166,16 +166,16 @@
         },
         {
             "name": "fortawesome/font-awesome",
-            "version": "5.8.2",
+            "version": "5.12.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/FortAwesome/Font-Awesome.git",
-                "reference": "e05a1219784935ff5beb6bfb17cdc86bc848d0bb"
+                "reference": "0d1f27efb836eb2ab994ba37221849ed64a73e5c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FortAwesome/Font-Awesome/zipball/e05a1219784935ff5beb6bfb17cdc86bc848d0bb",
-                "reference": "e05a1219784935ff5beb6bfb17cdc86bc848d0bb",
+                "url": "https://api.github.com/repos/FortAwesome/Font-Awesome/zipball/0d1f27efb836eb2ab994ba37221849ed64a73e5c",
+                "reference": "0d1f27efb836eb2ab994ba37221849ed64a73e5c",
                 "shasum": ""
             },
             "type": "library",
@@ -225,20 +225,20 @@
                 "icon",
                 "svg"
             ],
-            "time": "2019-05-07T17:37:12+00:00"
+            "time": "2020-02-05T14:36:40+00:00"
         },
         {
             "name": "twbs/bootstrap",
-            "version": "v4.3.1",
+            "version": "v4.4.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/twbs/bootstrap.git",
-                "reference": "8fa0d3010112dca5dd6dd501173415856001ba8b"
+                "reference": "dca1ab7d877bc4b664b43604657a2b5fbe2b4ecb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twbs/bootstrap/zipball/8fa0d3010112dca5dd6dd501173415856001ba8b",
-                "reference": "8fa0d3010112dca5dd6dd501173415856001ba8b",
+                "url": "https://api.github.com/repos/twbs/bootstrap/zipball/dca1ab7d877bc4b664b43604657a2b5fbe2b4ecb",
+                "reference": "dca1ab7d877bc4b664b43604657a2b5fbe2b4ecb",
                 "shasum": ""
             },
             "replace": {
@@ -256,12 +256,12 @@
             ],
             "authors": [
                 {
-                    "name": "Jacob Thornton",
-                    "email": "jacobthornton@gmail.com"
-                },
-                {
                     "name": "Mark Otto",
                     "email": "markdotto@gmail.com"
+                },
+                {
+                    "name": "Jacob Thornton",
+                    "email": "jacobthornton@gmail.com"
                 }
             ],
             "description": "The most popular front-end framework for developing responsive, mobile first projects on the web.",
@@ -276,7 +276,7 @@
                 "sass",
                 "web"
             ],
-            "time": "2019-02-13T16:01:40+00:00"
+            "time": "2019-11-28T12:59:49+00:00"
         }
     ],
     "packages-dev": [],
