@@ -14,6 +14,13 @@ class TestCtrl
 	{
 		
 	}
+	
+	
+	public static function bootstrapGET ()
+	{
+		$view = new \View();
+		echo $view->render('test/bootstrap.phtml');
+	}
 
 	
 	public static function jqueryuiGET ()
