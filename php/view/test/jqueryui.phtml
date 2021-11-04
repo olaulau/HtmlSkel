@@ -1,34 +1,39 @@
 <?php
-require_once __DIR__.'/../layout/head.phtml';
+require_once __DIR__ . '/../layout/head.phtml';
 ?>
 
 <?php
-require_once __DIR__.'/../layout/header.phtml';
+require_once __DIR__ . '/../layout/header.phtml';
 ?>
 
-	<!-- Begin page content -->
-	<main role="main" class="container">
-    	<h1 class="mt-5">HTML skel</h1>
-    	<h3>jquery ui test</h3>
-    	
-	</main>
-	
-	<div id="dialog-confirm" title="Empty the recycle bin?">
-	  <p><span class="ui-icon ui-icon-alert" style="float:left; margin:12px 12px 20px 0;"></span>These items will be permanently deleted and cannot be recovered. Are you sure?</p>
-	</div>
-	
+<!-- Begin page content -->
+<main role="main" class="container">
+	<h1 class="mt-5">HTML skel</h1>
+	<h3>jquery ui test</h3>
+</main>
 
-<?php
-require_once __DIR__.'/../layout/footer.phtml';
-?>
+<div id="dialog-confirm" title="Empty the recycle bin?">
+	<p>
+		<span class="ui-icon ui-icon-alert" style="float: left; margin: 12px 12px 20px 0;"></span>These items will be
+		permanently deleted and cannot be recovered. Are you sure?
+	</p>
+</div>
 
 
 <?php
-require_once __DIR__.'/../layout/foot.phtml';
+require_once __DIR__ . '/../layout/footer.phtml';
 ?>
 
-  <script>
+
+<?php
+require_once __DIR__ . '/../layout/foot.phtml';
+?>
+
+<script>
   $( function() {
+	var bootstrapButton = $.fn.button.noConflict() // return $.fn.button to previously assigned value
+	$.fn.bootstrapBtn = bootstrapButton // give $().bootstrapBtn the Bootstrap functionality
+	
     $( "#dialog-confirm" ).dialog({
       resizable: false,
       height: "auto",
@@ -44,4 +49,4 @@ require_once __DIR__.'/../layout/foot.phtml';
       }
     });
   } );
-  </script>
+</script>

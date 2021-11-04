@@ -3,7 +3,7 @@ namespace controller;
 
 class TestCtrl
 {
-
+	
 	public static function beforeRoute ()
 	{
 		
