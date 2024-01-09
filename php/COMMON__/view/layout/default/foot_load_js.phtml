@@ -1,0 +1,13 @@
+	<?php
+	$js = $f3->get("page.js");
+	if(!empty($js))
+	{
+		$js = array_unique($js);
+		foreach ($js as $file)
+		{
+			?>
+			<script src="<?= $file ?>"></script>
+			<?php
+		}
+	}
+	?>

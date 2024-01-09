@@ -1,0 +1,133 @@
+/* Sticky footer styles */
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  line-height: 60px; /* Vertically center the text there */
+  background-color: #f5f5f5;
+}
+
+
+/* Custom page CSS */
+/* Not required for template or sticky footer method. */
+body > .container-fluid {
+  padding: 60px 15px 0;
+}
+
+.footer > .container {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+code {
+  font-size: 80%;
+}
+
+
+
+/* icons sizes */
+i.fa-solid {
+	width: 1.5em;
+	padding: 0.2rem;
+}
+
+
+/* select2 designed like bootstreap select */
+.select2-container .select2-selection--single .select2-selection__rendered {
+	padding: .375rem 2.25rem .375rem .75rem;
+}
+.select2-container .select2-selection--single {
+	height: auto;
+}
+.select2-container--default .select2-selection--single {
+	border: 1px solid #ced4da;
+	border-radius: .25rem;
+}
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+	top: 0.5rem;
+	right: 0.75rem;
+}
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+	line-height: inherit;
+}
+.select2.select2-container.select2-container--default.select2-container--below.select2-container--focus {
+  display: block;
+}
+
+
+/* no underline on links */
+a {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+
+
+/* ---- jquery ui modals ---- */
+
+/* jquery ui dialog lighter header bar */
+.ui-widget-header {
+	border: none;
+	background: none;
+}
+
+/* more compact modal */
+.ui-dialog .ui-dialog-titlebar {
+	padding: 0;
+	text-align: center;
+}
+
+.ui-dialog .ui-dialog-content {
+	padding: 0.5em;
+}
+
+/* shadow on modal */
+.ui-dialog {
+	box-shadow: 0px 0px 15px 0px #000000;
+}
+
+/* modal overlay */
+.ui-widget-overlay {
+	background: black;
+	opacity: 1;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+.ui-widget-overlay-after {
+	transition: backdrop-filter 0.2s;
+	backdrop-filter: blur(5px);
+}
+
+/* modal */
+.ui-dialog.ui-corner-all.ui-widget.ui-widget-content.ui-front {
+	border-radius: 15px;
+}
+
+/* no margin for pagination */
+ul.pagination {
+	margin-bottom: 0;
+}
+
+
+/* recover header navbar height on print */
+@media print {
+	body > .container-fluid {
+		padding: 0;
+	}
+}
+
+
+/* no spinner for input number */
+input[type="number"] {
+    appearance: textfield;
+}

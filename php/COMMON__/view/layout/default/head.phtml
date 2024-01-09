@@ -1,14 +1,17 @@
+<?php
+use COMMON__\svc\Misc;
+?>
 <!doctype html>
-<html lang="en">
+<html lang="fr">
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<meta name="description" content="">
 	<meta name="author" content="">
-<!-- 	<link rel="icon" href="favicon.ico"> -->
+<!--	<link rel="icon" href="favicon.ico"> -->
 	<link rel="icon" href="data:;base64,iVBORw0KGgo=">
 	
-	<title>Index</title>
+	<title><?= $page["title"] ?></title>
 	
 	<link href="<?= $BASE ?>/vendor/twbs/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
 	<link href="<?= $BASE ?>/vendor/components/jqueryui/themes/base/jquery-ui.min.css" rel="stylesheet">
@@ -18,10 +21,36 @@
 	<link href="<?= $BASE ?>/vendor/fortawesome/font-awesome/css/brands.css" rel="stylesheet">
 	<link href="<?= $BASE ?>/vendor/fortawesome/font-awesome/css/solid.css" rel="stylesheet">
 	
-	<!-- Custom styles for this template -->
-	<link href="<?= $BASE ?>/assets/index.css" rel="stylesheet">
+	<link href="<?= $BASE ?>/vendor/select2/select2/dist/css/select2.min.css" rel="stylesheet" />
 	
-	<link rel="shortcut icon" href="#" />
+	<!-- Custom styles for this template -->
+	<?php
+	// import assets from previous directories
+	$path = $page["name"];
+	$paths = [];
+	while($path !== ".")
+	{
+		array_unshift($paths, $path);
+		$path = dirname($path);
+	}
+	
+	Misc::load_asset("COMMON__", "index", "css");
+	foreach ($paths as $path)
+	{
+		Misc::load_asset($page["module"], $page["name"], "css");
+		Misc::load_asset($page["module"], $page["name"]."/index", "css");
+	}
+	
+	$css = array_unique($f3->get("page.css"));
+	foreach ($css as $file)
+	{
+		?>
+		<link href="<?= $file ?>" rel="stylesheet">
+		<?php
+	}
+	?>
+	
+	<link rel="icon" href="data:;base64,iVBORw0KGgo=">
 </head>
 
 <body>

@@ -5,6 +5,10 @@
 		"components/jquery" : "^3",
 		"components/jqueryui" : "^1",
 		"fortawesome/font-awesome" : "^6",
-		"bcosca/fatfree" : "^3"
+		"bcosca/fatfree-core": "^3.8",
+		"select2/select2": "^4.0",
+		"ikkez/f3-falsum": "^2.8",
+		"ikkez/f3-cortex": "1.*",
+		"ikkez/f3-validation-engine": "^1.7"
 	}
 }

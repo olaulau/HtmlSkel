@@ -1,0 +1,24 @@
+		<?php
+		if(!empty($error["message"]))
+		{
+			?>
+			<div class="alert alert-danger my-3" role="alert">
+				<?php
+				$error_messages = explode(PHP_EOL, $error["message"]);
+				if($f3->get("DEBUG") === 3)
+				{
+					foreach ($error_messages as $error_message)
+					{
+						echo "$error_message<br>";
+					}
+				}
+				else
+				{
+					echo $error_messages[0];
+				}
+				?>
+			</div>
+			<?php
+		}
+		?>
+		

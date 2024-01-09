@@ -1,0 +1,29 @@
+<?php
+require_once __DIR__ . "/head.phtml";
+?>
+
+<?php
+require_once __DIR__ . "/header.phtml";
+?>
+
+	<!-- Begin page content -->
+	<main role="main" class="container-fluid">
+
+<?php
+require_once __DIR__ . "/error_message.phtml";
+?>
+
+
+<?php
+require_once __DIR__ . "/../../../../" . $page["module"] . "/view/" . $page["name"] . ".phtml";
+?>
+
+	</main>
+
+<?php
+require_once __DIR__ . "/footer.phtml";
+?>
+
+<?php
+require_once __DIR__ . "/foot.phtml";
+?>

@@ -1,0 +1,28 @@
+<?php
+use COMMON__\svc\Misc;
+?>
+	<!-- static JS -->
+	<script src="<?= $BASE ?>/vendor/components/jquery/jquery.min.js"></script>
+	<script src="<?= $BASE ?>/node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
+	<script src="<?= $BASE ?>/vendor/twbs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+	<script src="<?= $BASE ?>/vendor/components/jqueryui/jquery-ui.min.js"></script>
+	
+	<script src="<?= $BASE ?>/vendor/select2/select2/dist/js/select2.min.js"></script>
+	<script src="<?= $BASE ?>/vendor/select2/select2/dist/js/i18n/fr.js"></script>
+	
+	<?php
+	Misc::load_asset("COMMON__", "index", "js");
+	foreach ($paths as $path)
+	{
+		Misc::load_asset($page["module"], $page["name"], "js");
+		Misc::load_asset($page["module"], $page["name"]."/index", "js");
+	}
+	?>
+	
+	<!-- auto JS from path + explicit JS from controler -->
+	<?php
+	require_once __DIR__ . "/foot_load_js.phtml";
+	?>
+	
+</body>
+</html>

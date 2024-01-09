@@ -1,0 +1,31 @@
+		<div class="d-flex justify-content-between align-items-end ">
+			<div><span class="badge rounded-pill text-bg-info">fiches <?= $page["paginate"]["start"] + 1 ?> - <?= $page["paginate"]["end"] + 1 ?> / <?= $page["paginate"]["total"] ?></span></div>
+			<nav>
+				<ul class="pagination justify-content-center">
+					<?php
+					$query_params = $GET;
+					$query_params ["page"] = 1;
+					?>
+					<li class="page-item"><a class="page-link" href="<?= $BASE . $f3->alias("costSheetList", [], $query_params) ?>"> <span>&laquo;</span></a></li>
+					
+					<?php
+					$query_params ["page"] = $page["paginate"]["pos"] + 1 - 1;
+					?>
+					<li class="page-item"><a class="page-link" href="<?= $BASE . $f3->alias("costSheetList", [], $query_params) ?>"> <span>&lt;</span></a></li>
+					
+					<li class="page-item disabled"><a class="page-link" href="#"><?= $page["paginate"]["pos"] + 1 ?></a></li>
+					
+					<?php
+					$query_params ["page"] =  $page["paginate"]["pos"] + 1 + 1;
+					?>
+					<li class="page-item"><a class="page-link" href="<?= $BASE . $f3->alias("costSheetList", [], $query_params) ?>"> <span>&gt;</span></a></li>
+					
+					<?php
+					$query_params ["page"] =  $page["paginate"]["count"];
+					?>
+					<li class="page-item"><a class="page-link" href="<?= $BASE . $f3->alias("costSheetList", [], $query_params) ?>"> <span>&raquo;</span></a></li>
+				</ul>
+			</nav>
+			<div><span class="badge rounded-pill text-bg-info">page <?= $page["paginate"]["pos"] + 1 ?> / <?= $page["paginate"]["count"] ?></span></div>
+		</div>
+		<p class="fs-6">&nbsp;</p>
