@@ -18,7 +18,8 @@
 }
 ```
 then : ``composer install``  
-to copy demo content : ``cp -R vendor/olaulau/htmlskel/{assets,conf,php,.gitignore,.htaccess,index.php} .``
+to copy demo content : ``cp -R vendor/olaulau/htmlskel/{assets,conf,php,.gitignore,.htaccess,index.php,package.json,package-lock.json} .``
+then : ``npm i``
 
 
 ## make your project directly extend this skel (not recommended) :
