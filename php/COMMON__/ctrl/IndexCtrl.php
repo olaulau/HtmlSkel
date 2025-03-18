@@ -1,6 +1,7 @@
 <?php
 namespace COMMON__\ctrl;
 
+
 class IndexCtrl extends Ctrl
 {
 

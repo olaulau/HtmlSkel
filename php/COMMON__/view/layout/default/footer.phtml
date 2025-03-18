@@ -5,7 +5,7 @@
 				<span></span>
 				<span class="text-muted">
 					<span class="fs-5 "> &copy; </span>
-					<span>2024 <a href="https://www.dsconnectic.com/" target="_blank">DS Connectic</a></span>
+					<span><?= (new DateTime())->format("Y") ?> <a href="<?= $conf ["AUTHOR_url"] ?>" target="_blank"><?= $conf ["AUTHOR_name"] ?></a></span>
 				</span>
 			</div>
 		</div>

@@ -22,15 +22,17 @@ abstract class Ctrl
 		$f3->set("log", $log);
 		
 		// initialise DB
-		$db = new \DB\SQL(
-			$f3->get("db.type").":host=".$f3->get("db.host").";port=".$f3->get("db.port").";dbname=".$f3->get("db.name"),
-			$f3->get("db.user"), $f3->get("db.password"),
-			[
-				\PDO::ATTR_PERSISTENT => true,
-			]
-		);
-		$db->log(false);
-		$f3->set("db", $db);
+		if(!empty($f3->get("db.user"))) {
+			$db = new \DB\SQL(
+				$f3->get("db.type").":host=".$f3->get("db.host").";port=".$f3->get("db.port").";dbname=".$f3->get("db.name"),
+				$f3->get("db.user"), $f3->get("db.password"),
+				[
+					\PDO::ATTR_PERSISTENT => true,
+				]
+			);
+			$db->log(false);
+			$f3->set("db", $db);
+		}
 		
 		// initialise session (ignores suspect session : change in IP / useragent)
 		$session = new \Session(
@@ -43,8 +45,7 @@ abstract class Ctrl
 		
 		// CSRF
 		$f3->CSRF = $f3->get("SESSION.CSRF");
-		if(empty($f3->CSRF))
-		{
+		if(empty($f3->CSRF)) {
 			CSRF::newToken();
 		}
 		
